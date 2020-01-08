@@ -34,6 +34,16 @@ namespace Trojan.Tray
             workDir = $"{Environment.CurrentDirectory}{ DirectorySeparatorChar }trojan";
             exePath = System.IO.Path.Combine(workDir, $"trojan.exe");
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="autoStart"></param>
+        public TrojanHelper(bool autoStart)
+        {
+            workDir = $"{Environment.CurrentDirectory}{ DirectorySeparatorChar }trojan";
+            exePath = System.IO.Path.Combine(workDir, $"trojan.exe");
+            this.Start();
+        }
         public void Start()
         {
             process = new Process();

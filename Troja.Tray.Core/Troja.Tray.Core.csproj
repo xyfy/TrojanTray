@@ -5,4 +5,8 @@
     <RootNamespace>Troja.Tray</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Win32.Registry" Version="4.7.0" />
+  </ItemGroup>
+
 </Project>
