@@ -5,9 +5,16 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trojan.Tray.Wpf", "Trojan.Tran.Wpf\Trojan.Tray.Wpf.csproj", "{79762FD5-C563-4475-B630-37B631A56A8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trojan.Tray.Win", "Trojan.Tran.Win\Trojan.Tray.Win.csproj", "{5B313CA2-1C53-42E3-B07C-91DBD692FC60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trojan.Tray.WinCore", "Trojan.Tray.WinCore\Trojan.Tray.WinCore.csproj", "{330B98F7-D142-4229-976D-929FD57F425C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trojan.Tray.Base", "Trojan.Tray.Base\Trojan.Tray.Base.csproj", "{44D75237-CA38-4B31-899C-A1FBC3F3EE43}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{A5D8605F-28CA-4F47-9A76-214DDE2D8EDB}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Troja.Tray.Core", "Troja.Tray.Core\Troja.Tray.Core.csproj", "{D345B7A8-A41E-4762-870A-EF0DFD4F37FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +26,14 @@ Global
 		{79762FD5-C563-4475-B630-37B631A56A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79762FD5-C563-4475-B630-37B631A56A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79762FD5-C563-4475-B630-37B631A56A8F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5B313CA2-1C53-42E3-B07C-91DBD692FC60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B313CA2-1C53-42E3-B07C-91DBD692FC60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B313CA2-1C53-42E3-B07C-91DBD692FC60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B313CA2-1C53-42E3-B07C-91DBD692FC60}.Release|Any CPU.Build.0 = Release|Any CPU
-		{44D75237-CA38-4B31-899C-A1FBC3F3EE43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44D75237-CA38-4B31-899C-A1FBC3F3EE43}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44D75237-CA38-4B31-899C-A1FBC3F3EE43}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44D75237-CA38-4B31-899C-A1FBC3F3EE43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330B98F7-D142-4229-976D-929FD57F425C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330B98F7-D142-4229-976D-929FD57F425C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330B98F7-D142-4229-976D-929FD57F425C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330B98F7-D142-4229-976D-929FD57F425C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D345B7A8-A41E-4762-870A-EF0DFD4F37FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D345B7A8-A41E-4762-870A-EF0DFD4F37FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D345B7A8-A41E-4762-870A-EF0DFD4F37FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D345B7A8-A41E-4762-870A-EF0DFD4F37FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

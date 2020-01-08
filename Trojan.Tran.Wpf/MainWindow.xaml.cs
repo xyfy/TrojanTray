@@ -51,7 +51,7 @@ namespace Trojan.Tran.Wpf
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, ex.Message, "发生错误", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(this, ex.Message,  @"发生错误", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

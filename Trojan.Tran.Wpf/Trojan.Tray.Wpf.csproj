@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Trojan.Tray.Base\Trojan.Tray.Base.csproj" />
+    <ProjectReference Include="..\Troja.Tray.Core\Troja.Tray.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
