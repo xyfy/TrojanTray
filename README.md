@@ -2,7 +2,7 @@
 
 a simple winform container for https://github.com/trojan-gfw/trojan
 
-now for trojan v1.14
+now for trojan v1.15.1
 
 ## runtime required
 
