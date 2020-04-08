@@ -24,6 +24,7 @@ namespace Trojan.Tray.WinCore
                 MessageBox.Show(errInfo, "发生错误！", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             btnEnd.Enabled = false;
+            Start();
         }
 
 
@@ -45,8 +46,7 @@ namespace Trojan.Tray.WinCore
                 listBox1.SelectedIndex = listBox1.Items.Count - 1;
             }));
         }
-
-        private void btnStart_Click(object sender, EventArgs e)
+        private void Start()
         {
             try
             {
@@ -59,11 +59,20 @@ namespace Trojan.Tray.WinCore
                 MessageBox.Show(this, ex.Message, "发生错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void btnEnd_Click(object sender, EventArgs e)
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            Start();
+        }
+
+        private void Stop()
         {
             helper.Close();
             btnEnd.Enabled = false;
             btnStart.Enabled = true;
+        }
+        private void btnEnd_Click(object sender, EventArgs e)
+        {
+            Stop();
         }
 
         private void NotifyIcon_MouseClick(object sender, MouseEventArgs e)
@@ -101,13 +110,13 @@ namespace Trojan.Tray.WinCore
                 == System.Windows.Forms.DialogResult.Yes)
             {
                 notifyIcon.Visible = false;   //设置图标不可见
-                helper.Close();
+                Stop();
                 this.Close();                  //关闭窗体
                 this.Dispose();                //释放资源
                 Application.Exit();            //关闭应用程序窗体
             }
         }
-    
+
         private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             //窗体关闭原因为单击"关闭"按钮或Alt+F4
@@ -118,7 +127,7 @@ namespace Trojan.Tray.WinCore
             }
             else
             {
-                helper.Close();
+                Stop();
             }
         }
 
